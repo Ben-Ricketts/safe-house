@@ -1,0 +1,9 @@
+@use "../Global_SCSS/variables" as v;
+
+.container {
+  border-radius: 50%;
+  max-width: 70%;
+  margin: 0 auto;
+  background-color: v.$primary--color;
+  padding-bottom: 83px;
+}

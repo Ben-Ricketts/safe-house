@@ -1,0 +1,12 @@
+// // Global files
+@use "./Global_SCSS/normalize";
+@use "./Global_SCSS/variables";
+@use "./Global_SCSS/global";
+@use "./Global_SCSS/fonts";
+// // Homepage
+@use "./Homepage/component_HP";
+@use "./Homepage/images_HP";
+@use "./Homepage/layout_HP";
+@use "./Homepage/typography_HP";
+@use "./Homepage/icons_HP";
+// //Living Room
