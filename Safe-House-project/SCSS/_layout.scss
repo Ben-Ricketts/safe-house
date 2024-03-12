@@ -1,0 +1,35 @@
+@use "./variables" as v;
+
+// <--------------Homepage STARTS --------------->
+
+.global-wrapper {
+  width: v.$web-site-width;
+  border: 2px solid green;
+  margin: 0 auto;
+  width: auto;
+}
+
+.grid {
+  display: grid;
+  height: 100vh;
+}
+
+.columns-3-6-3 {
+  grid-template-columns: 3fr 6fr 3fr;
+}
+
+.login-wrapper {
+  background-color: v.$primary--color;
+  border-radius: 50%;
+  .logo-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .home-icon {
+    display: block;
+    margin: 44px 172px 48px 172px;
+  }
+  .title {
+    text-align: center;
+  }
+}
