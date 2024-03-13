@@ -3,14 +3,14 @@
 // <--------------Homepage STARTS --------------->
 
 .global-wrapper {
-  width: v.$web-site-width;
+  max-width: v.$web-site-width;
   margin: 0 auto;
-  width: auto;
+  width: 99%;
+  border: 2px solid green;
 }
 
 .grid {
   display: grid;
-  height: 100vh;
 }
 
 .columns-3-6-3 {
@@ -21,11 +21,16 @@
   background-color: #313131;
   border-radius: 50%;
   padding-bottom: 50px;
-
   width: 70%;
   margin: 0 auto;
   .logo-wrapper {
     display: flex;
     justify-content: center;
   }
+}
+
+// <--------------Homepage ENDS --------------->
+
+.top {
+  background-color: blue;
 }
