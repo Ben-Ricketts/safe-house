@@ -1,8 +1,16 @@
 @use "./variables" as v;
 @use "./animation";
+// <--------------MIXINS------------------>
+@mixin button-hover() {
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
 // <--------------Homepage STARTS --------------->
 
 .login-btn {
+  @include button-hover();
   display: block;
   margin: 0 auto;
   font-size: 1rem;

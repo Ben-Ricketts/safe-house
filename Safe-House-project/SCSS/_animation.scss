@@ -1,24 +1,24 @@
-// @use "./variables" as v;
-// @use "./animation";
-// // <--------------Homepage STARTS --------------- >
+@use "./variables" as v;
 
-// @mixin button-hover() {
-//   &:hover {
-//     transform: scale(1.1);
-//     cursor: pointer;
-//   }
-// }
+// <--------------Homepage STARTS --------------- >
 
-// .login-wrapper {
-//   animation: bounce 5s infinite ease-in-out;
-// }
+@mixin button-hover() {
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
 
-// @keyframes bounce {
-//   0%,
-//   100% {
-//     transform: translateY(0px);
-//   }
-//   50% {
-//     transform: translateY(10px);
-//   }
-// }
+.login-wrapper {
+  animation: bounce 5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
