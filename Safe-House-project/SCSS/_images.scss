@@ -1,4 +1,10 @@
+@use "./variables" as v;
+@use "./animation";
+// <--------------Homepage STARTS --------------->
+
 .sony-logo-img {
-  width: 100%;
+  width: 60%;
   margin-bottom: 50px;
+  display: block;
+  margin: 0 auto;
 }

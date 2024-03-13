@@ -1,0 +1,24 @@
+// @use "./variables" as v;
+// @use "./animation";
+// // <--------------Homepage STARTS --------------- >
+
+// @mixin button-hover() {
+//   &:hover {
+//     transform: scale(1.1);
+//     cursor: pointer;
+//   }
+// }
+
+// .login-wrapper {
+//   animation: bounce 5s infinite ease-in-out;
+// }
+
+// @keyframes bounce {
+//   0%,
+//   100% {
+//     transform: translateY(0px);
+//   }
+//   50% {
+//     transform: translateY(10px);
+//   }
+// }

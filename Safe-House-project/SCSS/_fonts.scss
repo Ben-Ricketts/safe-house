@@ -1,3 +1,7 @@
+@use "./variables" as v;
+@use "./animation";
+// <--------------Homepage STARTS --------------->
+
 @font-face {
   font-family: title;
   src: url(/Fonts/Aquire-BW0ox.otf);
