@@ -8,15 +8,30 @@
   }
 }
 
+// @mixin room-select-btn() {
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   font-size: 3rem;
+//   text-transform: capitalize;
+//   border-radius: 20px;
+//   width: 70%;
+//   margin: 20px;
+//   height: 110px;
+//   font-family: headers;
+// }
+
 @mixin room-select-btn() {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   font-size: 3rem;
   text-transform: capitalize;
-  padding: 27px 122px 27px 122px;
   border-radius: 20px;
+  width: 70%;
+  height: 110px;
 }
+
 // <--------------Homepage STARTS --------------->
 
 .login-btn {
@@ -42,9 +57,47 @@
 .living-room-btn {
   background-image: url(/living-room.jpg);
   @include room-select-btn();
+  @include button-hover();
+  p {
+    padding-top: 20px;
+  }
 }
 
-.btn-container {
-  display: flex;
-  justify-content: end;
+.masterbr-room-btn {
+  background-image: url(/masterbedroom.jpg);
+  @include room-select-btn();
+  @include button-hover();
+}
+
+.garage-room-btn {
+  background-image: url(/garage.jpg);
+  @include room-select-btn();
+  @include button-hover();
+}
+.kitchen-room-btn {
+  background-image: url(/kitchen.jpg);
+  @include room-select-btn();
+  @include button-hover();
+}
+.br-room-btn {
+  background-image: url(/bedroom.jpg);
+  @include room-select-btn();
+  @include button-hover();
+}
+.hallway-room-btn {
+  background-image: url(/hallway.jpg);
+  @include room-select-btn();
+  @include button-hover();
+}
+
+.overlay {
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 104%;
+  height: 108px;
+  border-radius: 20px;
+  transform: translateY(-2px) translateX(-10px);
+}
+
+p {
+  opacity: 1;
 }

@@ -6,7 +6,6 @@
   max-width: v.$web-site-width;
   margin: 0 auto;
   width: 99%;
-  border: 2px solid green;
 }
 
 .columns-3-6-3 {
@@ -36,4 +35,13 @@
 .col-6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  width: 90%;
+  margin: 0 auto;
+  .right-side {
+    text-align: center;
+  }
+  .left-side {
+    text-align: center;
+  }
 }
