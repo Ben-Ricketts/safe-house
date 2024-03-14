@@ -29,7 +29,7 @@
   font-size: 1rem;
   padding: 10px 69px 10px 69px;
   margin-top: 50px;
-  background-image: linear-gradient(#2f3260, #0a0c19);
+  background-image: v.$menu-colors;
   color: white;
   border-radius: 20px;
   text-transform: capitalize;
@@ -47,5 +47,22 @@
   @include button-hover();
   border: 2px solid v.$primary--color;
   margin: 10px;
-  width: auto;
+  width: 80%;
+}
+
+.menu {
+  background-image: v.$menu-colors;
+  display: flex;
+}
+.menu box-icon:first-child {
+  display: flex;
+  justify-content: start;
+  background-color: brown;
+}
+.menu box-icon:nth-last-child(-n + 3) {
+  margin-left: auto;
+}
+
+.test p:first-child {
+  color: blue;
 }
