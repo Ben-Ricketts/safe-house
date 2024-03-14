@@ -7,6 +7,16 @@
     cursor: pointer;
   }
 }
+
+@mixin room-select-btn() {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 3rem;
+  text-transform: capitalize;
+  padding: 27px 122px 27px 122px;
+  border-radius: 20px;
+}
 // <--------------Homepage STARTS --------------->
 
 .login-btn {
@@ -24,4 +34,17 @@
   @media (max-width: 1750px) {
     font-size: 2rem;
   }
+}
+
+// <--------------Homepage ENDS --------------->
+// <---------------------SELECT PAGE STARTS ---------------->
+
+.living-room-btn {
+  background-image: url(/living-room.jpg);
+  @include room-select-btn();
+}
+
+.btn-container {
+  display: flex;
+  justify-content: end;
 }

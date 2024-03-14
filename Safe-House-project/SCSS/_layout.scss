@@ -9,11 +9,8 @@
   border: 2px solid green;
 }
 
-.grid {
-  display: grid;
-}
-
 .columns-3-6-3 {
+  display: grid;
   grid-template-columns: 3fr 6fr 3fr;
 }
 
@@ -30,7 +27,13 @@
 }
 
 // <--------------Homepage ENDS --------------->
+// <---------------------SELECT PAGE STARTS ---------------->
 
 .top {
-  background-color: blue;
+  display: grid;
+}
+
+.col-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
