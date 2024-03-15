@@ -50,19 +50,42 @@
   width: 80%;
 }
 
+.menu-container {
+  display: flex;
+
+  margin-top: auto;
+  height: 20vh;
+  .house-icon {
+    @include button-hover();
+    padding: 20px 40px 20px 40px;
+    margin: 40px 20px 20px 140px;
+    background-color: v.$primary--color;
+    border-radius: 10px;
+  }
+  .thermo-icon,
+  .wifi-icon,
+  .bulb-icon {
+    @include button-hover();
+    border-radius: 10px;
+    padding: 20px 40px 20px 40px;
+    margin: 40px 20px 20px 20px;
+    background-color: v.$primary--color;
+  }
+  .bulb-icon {
+    margin-right: 100px;
+  }
+}
+
 .menu {
   background-image: v.$menu-colors;
   display: flex;
-}
-.menu box-icon:first-child {
-  display: flex;
-  justify-content: start;
-  background-color: brown;
-}
-.menu box-icon:nth-last-child(-n + 3) {
-  margin-left: auto;
+  width: 100vw;
+  height: 160px;
+  margin-top: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.test p:first-child {
-  color: blue;
+.menu div:last-child {
+  margin-left: auto;
 }
