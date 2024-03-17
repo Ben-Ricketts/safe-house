@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Safe House</title>
+    <link rel="stylesheet" href="./assets/CSS/main.min.css" />
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
+
+    <link rel="icon" href="/bxs-home-smile.svg" sizes="any" />
+    <link rel="icon" href="/bxs-home-smile.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="manifest" href="site.webmanifest" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <div class="global-wrapper">
+      <header class="top-banner">
+        <img
+          class="livingrm-banner"
+          src="/livingrm-svg.svg"
+          alt="image of living room"
+        />
+      </header>
+      <section class="rangeslider-section">
+        <div class="range-slider-wrapper">
+          <div class="input-value">
+            <span id="rangeNumber">0W</span>
+            <box-icon
+              type="solid"
+              name="bulb"
+              size="35px"
+              color="white"
+            ></box-icon>
+          </div>
+          <div class="range-content-container">
+            <div class="range-thumb" id="rangeThumb"></div>
+
+            <div class="range-line">
+              <input
+                type="range"
+                class="range-input"
+                id="rangeInput"
+                min="0"
+                max="100"
+                value="0"
+                step="1"
+              />
+            </div>
+          </div>
+          <div class="timer">
+            <p>set timer</p>
+            <button>clock</button>
+          </div>
+          <div class="power-btn"><button>on/off</button></div>
+        </div>
+      </section>
+      <section class="rangeslider-section">
+        <div class="range-slider-wrapper">
+          <button>50W</button>
+          <input
+            type="range"
+            class="range-input"
+            id="range-input"
+            min="0"
+            max="100"
+            value="50"
+            step="1"
+          />
+          <div class="timer">
+            <p>set timer</p>
+            <button>clock</button>
+          </div>
+          <div class="power-btn"><button>on/off</button></div>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/js/app.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>

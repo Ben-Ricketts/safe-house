@@ -89,3 +89,53 @@
 .menu div:last-child {
   margin-left: auto;
 }
+
+// <---------------------SELECT PAGE ENDS ---------------->
+// <-------------------LIVINGROOM SECTION STARTS------------------------------->
+
+input {
+  opacity: 0;
+}
+
+.range-input {
+  width: 100%;
+}
+
+.range-content-container {
+  width: 70%;
+
+  position: relative;
+}
+
+.input-value {
+  background-color: v.$primary--color;
+  padding: 6px 29px 6px 29px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 1px solid v.$border-color;
+  span {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: block;
+  }
+}
+
+.range-line {
+  border-radius: 10px;
+  width: 100%;
+  border: 2px solid v.$primary--color;
+  height: 15px;
+  margin-top: 40px;
+  background-image: linear-gradient(to left, #dafc00, #02040d);
+}
+
+.range-thumb {
+  width: 15px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #6d6d6d;
+  position: absolute;
+  pointer-events: none;
+  margin-top: 20px;
+}
