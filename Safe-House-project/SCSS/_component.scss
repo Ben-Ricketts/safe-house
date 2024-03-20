@@ -100,6 +100,15 @@
 // <-------------------LIVINGROOM SECTION STARTS------------------------------->
 // <-----------Range Input sliders start ---------------------------->
 
+.log-out {
+  @include button-hover();
+  background-color: v.$primary--color;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid v.$border-color;
+}
+
 input {
   opacity: 0;
 }
@@ -137,6 +146,15 @@ input {
   background-image: linear-gradient(to left, #dafc00, #02040d);
 }
 
+.ac-range-line {
+  border-radius: 10px;
+  width: 100%;
+  border: 2px solid v.$primary--color;
+  height: 15px;
+  margin-top: 40px;
+  background-image: linear-gradient(to left, #f60f0f, #163ec2);
+}
+
 .range-thumb {
   width: 15px;
   height: 50px;
@@ -153,6 +171,7 @@ input {
   height: 100%;
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
+  margin-left: 10px;
   @include box-decoration();
   p {
     text-transform: capitalize;
@@ -174,10 +193,13 @@ input {
 }
 
 .power-btn {
-  @include box-decoration();
+  @include button-hover();
+  margin: 0px 10px;
+  border-radius: 10px;
   background-color: v.$primary--color;
-  height: 90px;
+  height: 65px;
+  border: 2px solid v.$border-color;
   box-icon {
-    padding: 10px;
+    padding: 0px 21px;
   }
 }

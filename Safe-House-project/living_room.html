@@ -24,7 +24,7 @@
 
   <body>
     <div class="global-wrapper">
-      <button>LOG OUT</button>
+      <button class="log-out">LOG OUT</button>
       <header class="top-banner">
         <img
           class="livingrm-banner"
@@ -32,6 +32,8 @@
           alt="image of living room"
         />
       </header>
+      <!-- <---------------first slider ------------>
+
       <section class="rangeslider-section">
         <div class="range-slider-wrapper">
           <div class="input-value">
@@ -72,44 +74,66 @@
           </button>
         </div>
       </section>
+      <!-- <----------------second slider ------------->
+
       <section class="rangeslider-section">
         <div class="range-slider-wrapper">
           <div class="input-value">
-            <span id="rangeNumber">0W</span>
+            <span id="acRangeNumber">0C</span>
             <box-icon
               type="solid"
-              name="bulb"
-              size="35px"
+              name="thermometer"
               color="white"
+              size="35px"
             ></box-icon>
           </div>
           <div class="range-content-container">
-            <div class="range-thumb" id="rangeThumb"></div>
+            <div class="range-thumb" id="acRangeThumb"></div>
 
-            <div class="range-line">
+            <div class="ac-range-line">
               <input
                 type="range"
                 class="range-input"
-                id="rangeInput"
+                id="acRangeInput"
                 min="0"
-                max="100"
+                max="40"
                 value="0"
                 step="1"
               />
+            </div>
+            <div class="ac-temp-numbers">
+              <span>5</span>
+              <span>10</span>
+              <span>15</span>
+              <span>20</span>
+              <span>25</span>
+              <span>30</span>
+              <span>35</span>
+              <span>40</span>
             </div>
           </div>
           <div class="timer">
             <p>set lights timer</p>
             <div class="timer-btn">
               <button class="set-timer">
-                <box-icon type="solid" name="timer" color="white"></box-icon
-                ><span> 06:00-23:00</span>
+                <box-icon type="solid" name="timer" color="white"></box-icon>
+                <span> 06:00-23:00 </span>
               </button>
             </div>
           </div>
-          <div class="power-btn"><button>on/off</button></div>
+          <button class="power-btn">
+            <box-icon name="power-off" color="white" size="35px"></box-icon>
+          </button>
         </div>
       </section>
+
+      <div class="selection-btn-container">
+        <div>
+          <h1>camera</h1>
+          <box-icon type="solid" name="camera-home"></box-icon>
+        </div>
+        <div></div>
+      </div>
     </div>
 
     <div class="menu-container">
