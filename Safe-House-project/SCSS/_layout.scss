@@ -102,3 +102,59 @@
 }
 // <-------------------LIVINGROOM SECTION ENDS------------------------------->
 // <-------------------------LIVINGROOM(CAM) STARTS ---------------------->
+.camera-section {
+  background-color: v.$primary--color;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.camera-top-section {
+  display: flex;
+  .heading-text {
+    margin: 0px 20px;
+  }
+  h1 {
+    display: inline;
+    text-transform: capitalize;
+  }
+}
+
+.camera-interface-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+}
+
+.cam-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  @media (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    box-icon {
+      margin-left: 20px;
+    }
+  }
+}
+
+// <-------------------------LIVINGROOM(TELEVISION) STARTS ---------------------->
+.television-interface-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
