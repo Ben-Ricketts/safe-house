@@ -203,3 +203,12 @@ input {
     padding: 0px 21px;
   }
 }
+
+.selection-btn {
+  @include box-decoration();
+  @include button-hover();
+  background-color: v.$primary--color;
+  width: 90%;
+  height: 130px;
+  margin: 20px;
+}

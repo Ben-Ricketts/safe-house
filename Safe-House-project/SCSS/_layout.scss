@@ -1,5 +1,30 @@
 @use "./variables" as v;
 @use "./animation";
+// <--------------MIXINS------------------>
+@mixin button-hover() {
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+@mixin room-select-btn() {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 3rem;
+  text-transform: capitalize;
+  border-radius: 20px;
+  width: 90%;
+  height: 110px;
+  margin: 20px;
+}
+
+@mixin box-decoration() {
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid v.$primary--color;
+}
 // <--------------Homepage STARTS --------------->
 
 .global-wrapper {
@@ -55,7 +80,7 @@
 }
 
 .top-banner {
-  margin: 25px 0px 25px 0px;
+  margin-bottom: 10px;
 }
 
 .ac-temp-numbers {
@@ -63,3 +88,17 @@
   justify-content: space-between;
   margin-left: 10%;
 }
+
+.selection-btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+  box-icon {
+    margin-left: 40%;
+  }
+  a {
+    width: 100%;
+  }
+}
+// <-------------------LIVINGROOM SECTION ENDS------------------------------->
+// <-------------------------LIVINGROOM(CAM) STARTS ---------------------->
