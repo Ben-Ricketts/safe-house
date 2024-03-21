@@ -25,6 +25,14 @@
   box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.5);
   border: 1px solid v.$primary--color;
 }
+
+@mixin background-section() {
+  background-color: v.$primary--color;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+}
 // <--------------Homepage STARTS --------------->
 
 .global-wrapper {
@@ -103,17 +111,13 @@
 // <-------------------LIVINGROOM SECTION ENDS------------------------------->
 // <-------------------------LIVINGROOM(CAM) STARTS ---------------------->
 .camera-section {
-  background-color: v.$primary--color;
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 20px;
+  @include background-section();
 }
 
 .camera-top-section {
   display: flex;
   .heading-text {
-    margin: 0px 20px;
+    margin: 0px 20px 20px 20px;
   }
   h1 {
     display: inline;
@@ -156,5 +160,33 @@
   @media (max-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+// <-------------------------LIVINGROOM(TELEVISION) ENDS ---------------------->
+// <------------------LIVINGROOM AUDIO BEGINS ----------->
+.audio-section {
+  @include background-section();
+}
+
+.audio-playlist-section {
+  p {
+    text-align: center;
+  }
+}
+// <------------------LIVINGROOM AUDIO ENDS ----------->
+// <------------------CEILING FAN BEGINS ----------->
+.ceiling-fan-section {
+  @include background-section();
+}
+
+.ceiling-fan-top {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ceiling-fan-dial {
+  width: 30%;
+  span {
+    margin: 10%;
   }
 }

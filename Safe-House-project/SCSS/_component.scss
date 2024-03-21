@@ -216,13 +216,6 @@ input {
 // <-------------------LIVINGROOM SECTION ENDS------------------------------->
 // <-------------------------LIVINGROOM(CAM) STARTS ---------------------->
 
-.settings-container {
-  @include box-decoration();
-  background-color: #3c3c3c;
-  padding: 10px;
-  margin: 0px 0px 20px 20px;
-}
-
 .camera-btns {
   .up-btn {
     display: block;
@@ -291,4 +284,28 @@ input {
   padding: 10px;
   font-size: 1.5rem;
   margin: 20px 0px;
+}
+
+// <---------LIVINROOM TELEVISION ENDS ------->
+// <----------------LIVINGROOM (AUDIO) STARTS -------->
+
+.audio-heading {
+  display: inline;
+}
+
+.audio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.audio-controls {
+  box-icon {
+    margin: 20px;
+  }
+}
+
+// <----------------LIVINGROOM (AUDIO) ENDS -------->// <----------------LIVINGROOM (CEILING FAN) ENDS -------->
+.ceiling-fan-power-btn {
+  display: block;
+  margin: 0 auto;
 }
