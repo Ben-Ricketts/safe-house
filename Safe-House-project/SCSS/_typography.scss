@@ -6,6 +6,10 @@
   border: 1px solid v.$primary--color;
 }
 
+.border {
+  border: 2px solid green;
+}
+
 // <--------------Homepage STARTS --------------->
 
 .title {
@@ -87,6 +91,28 @@
   }
 }
 // <---------LIVINROOM TELEVISION ENDS ------->
+// <------------------LIVINGROOM AUDIO BEGINS ----------->
+@mixin audio-properties {
+  text-transform: capitalize;
+  padding: 5px;
+}
+
+.audio-right-side p {
+  @include audio-properties();
+  text-align: center;
+  font-size: 1rem;
+}
+
+.audio-left-side p {
+  @include audio-properties();
+}
+
+.audio-left-side {
+  p:first-child {
+    font-size: 2rem;
+  }
+}
+// <------------------LIVINGROOM AUDIO ENDS ----------->
 // <------------------CEILING FAN BEGINS ----------->
 .ceiling-fan-top {
   h1 {

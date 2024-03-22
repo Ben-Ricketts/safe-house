@@ -288,22 +288,18 @@ input {
 
 // <---------LIVINROOM TELEVISION ENDS ------->
 // <----------------LIVINGROOM (AUDIO) STARTS -------->
-
-.audio-heading {
-  display: inline;
+hr {
+  width: 75%;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
-.audio-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.music-time-length box-icon {
+  background-color: v.$button-color;
+  padding: 10px;
+  @include box-decoration();
+  border-radius: 10px;
 }
-
-.audio-controls {
-  box-icon {
-    margin: 20px;
-  }
-}
-
 // <----------------LIVINGROOM (AUDIO) ENDS -------->// <----------------LIVINGROOM (CEILING FAN) ENDS -------->
 .ceiling-fan-power-btn {
   display: block;
