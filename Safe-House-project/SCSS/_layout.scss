@@ -192,16 +192,35 @@
 // <------------------CEILING FAN BEGINS ----------->
 .ceiling-fan-section {
   @include background-section();
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  h1 {
+    display: inline;
+  }
 }
 
-.ceiling-fan-top {
+.fan-dial-numbers {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 50%;
 }
 
-.ceiling-fan-dial {
-  width: 30%;
-  span {
-    margin: 10%;
+.ceiling-fan-line {
+  width: 50%;
+}
+
+.ceiling-fan-left {
+  justify-self: end;
+  margin-right: 20px;
+}
+
+// <------------------CEILING FAN ENDS----------->
+// <------------------BLINDS ENDS----------->
+
+.blinds-section {
+  @include background-section();
+  .blinds-first-line {
+    display: flex;
   }
 }

@@ -7,55 +7,48 @@
     <link rel="stylesheet" href="./assets/CSS/main.min.css" />
     <meta name="description" content="" />
 
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="" />
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
     <meta property="og:image:alt" content="" />
 
+    <!-- Favicon and Touch Icon -->
     <link rel="icon" href="/bxs-home-smile.svg" sizes="any" />
     <link rel="icon" href="/bxs-home-smile.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="icon.png" />
 
+    <!-- Web App Manifest -->
     <link rel="manifest" href="site.webmanifest" />
 
+    <!-- Theme Color -->
     <meta name="theme-color" content="#fafafa" />
   </head>
 
   <body>
     <div class="global-wrapper">
-      <a href="./index.html">
-        <button class="log-out">LOG OUT</button>
-      </a>
+      <a href="./index.html"><button class="log-out">LOG OUT</button></a>
       <header class="top-banner">
         <img
           class="livingrm-banner"
-          src="/overhead-images/livingrm-svg.svg"
+          src="/overhead-images/garage-svg.svg"
           alt="image of living room"
         />
       </header>
 
-      <section class="audio-section">
-        <div class="audio-grid">
-          <!-- <-------left ------>
-          <div class="audio-left-side">
-            <p>audio</p>
-            <box-icon name="bluetooth" size="35px" color="#0082FC"></box-icon>
-            <p>
-              living room <br />
-              UE boom
-            </p>
+      <section class="camera-section">
+        <div class="camera-top-section">
+          <div class="heading-text">
+            <h1>camera</h1>
           </div>
-          <!-- <--------right------>
-          <div class="audio-right-side">
-            <img
-              src="./Spacey_Jane_-_Sunlight.png"
-              alt="spacey jane album cover"
-            />
-            <p>good grief</p>
-            <p>spacey jane</p>
-            <div class="audio-controls">
-              <box-icon name="rewind" size="65px" color="white"> </box-icon>
+        </div>
+
+        <div class="camera-interface-section">
+          <div class="cam">
+            <img src="./garage-cam.svg" alt="image of garage through camera" />
+            <div class="cam-controls">
+              <box-icon name="rewind" size="65px" color="white"></box-icon>
               <box-icon name="play" size="65px" color="white"></box-icon>
               <box-icon
                 name="fast-forward"
@@ -63,14 +56,50 @@
                 color="white"
               ></box-icon>
             </div>
-            <div class="music-time-length">
-              <box-icon
-                type="solid"
-                name="volume-full"
-                size="25px"
-                color="white"
-              ></box-icon>
-              <hr />
+            <div class="cam-selection">
+              <button>cam 1</button>
+              <button>cam 2</button>
+            </div>
+          </div>
+
+          <div class="camera-btns">
+            <div>
+              <button class="up-btn">
+                <box-icon
+                  name="up-arrow"
+                  type="solid"
+                  size="35px"
+                  color="white"
+                ></box-icon>
+              </button>
+            </div>
+            <div class="left-right-btn">
+              <button>
+                <box-icon
+                  name="left-arrow"
+                  type="solid"
+                  size="35px"
+                  color="white"
+                ></box-icon>
+              </button>
+              <button>
+                <box-icon
+                  name="right-arrow"
+                  type="solid"
+                  size="35px"
+                  color="white"
+                ></box-icon>
+              </button>
+            </div>
+            <div>
+              <button class="down-btn">
+                <box-icon
+                  name="down-arrow"
+                  type="solid"
+                  size="35px"
+                  color="white"
+                ></box-icon>
+              </button>
             </div>
           </div>
         </div>
@@ -114,6 +143,8 @@
         </div>
       </nav>
     </div>
+
+    <!-- JavaScript Files -->
     <script type="module" src="/js/app.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>

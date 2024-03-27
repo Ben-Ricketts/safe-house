@@ -217,6 +217,7 @@ input {
 // <-------------------------LIVINGROOM(CAM) STARTS ---------------------->
 
 .camera-btns {
+  margin-top: 20px;
   .up-btn {
     display: block;
     margin: 0 auto;
@@ -300,8 +301,37 @@ hr {
   @include box-decoration();
   border-radius: 10px;
 }
-// <----------------LIVINGROOM (AUDIO) ENDS -------->// <----------------LIVINGROOM (CEILING FAN) ENDS -------->
-.ceiling-fan-power-btn {
-  display: block;
-  margin: 0 auto;
+// <----------------LIVINGROOM (AUDIO) ENDS -------->// <----------------LIVINGROOM (CEILING FAN) STARTS -------->
+
+.ceiling-fan-btn {
+  @include button-hover();
+  background-color: v.$button-color;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 10px;
+  @include box-decoration();
+}
+
+.ceiling-fan-timer {
+  background-color: v.$primary--color;
+  width: 40%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-left: 10px;
+  @include box-decoration();
+  p {
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
+
+// <----------------LIVINGROOM (CEILING FAN) ENDS -------->
+// <----------------LIVINGROOM (BLINDS) BEGINS -------->
+
+.blinds-first-line {
+  button {
+    @include box-decoration();
+  }
 }
