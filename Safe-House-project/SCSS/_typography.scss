@@ -123,3 +123,37 @@
     font-size: 1.5rem;
   }
 }
+
+// <------------------CEILING FAN   ENDS ----------->
+// <------------------BLINDS BEGINS ----------->
+
+.blinds-first-line {
+  h1 {
+    text-transform: capitalize;
+  }
+}
+
+.blinds-section {
+  h1 {
+    text-transform: capitalize;
+  }
+}
+
+.windows-locked-status {
+  p {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #af5d57;
+  }
+}
+
+// <------------------BLINDS END ----------->
+// <------------------SMOKE DETECTOR BEGINS ----------->
+.smoke-detector-section {
+  h1 {
+    text-transform: capitalize;
+    padding: 20px 0px 10px 0px;
+    font-size: 1.5rem;
+    margin-left: 25px;
+  }
+}
