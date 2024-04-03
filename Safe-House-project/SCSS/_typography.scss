@@ -157,3 +157,51 @@
     margin-left: 25px;
   }
 }
+// <------------------SMOKE DETECTOR ENDS ----------->
+// <------------------OVEN BEGINS ----------->
+
+.oven-top-section {
+  h1 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    margin-left: 25px;
+    margin-top: 7px;
+  }
+  span {
+    font-size: 1.5rem;
+  }
+}
+
+.oven-top-middle-section {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.oven-bottom-middle-section {
+  span {
+    font-size: 1.5rem;
+  }
+}
+
+.oven-bottom-section {
+  p {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  div:nth-child(1) {
+    p:nth-of-type(2) {
+      color: #af5d57;
+    }
+  }
+  .oven-bottom-section {
+    p {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+    div:nth-child(1) {
+      p:nth-of-type(2) {
+        color: #af5d57;
+      }
+    }
+  }
+}

@@ -398,3 +398,41 @@ hr {
   font-size: 1.5rem;
   text-transform: capitalize;
 }
+// <----------------SMOKE DETECTOR ENDS -------->
+// <----------------OVEN SECTION STARTS -------->
+
+.oven-top-section {
+  button {
+    @include box-decoration();
+    @include button-hover();
+    background-color: #1a1c37;
+    padding: 10px 20px;
+    margin-left: 20px;
+  }
+  span {
+    @include box-decoration();
+    padding: 10px 20px;
+  }
+}
+
+.oven-bottom-middle-section {
+  span {
+    @include box-decoration();
+    padding: 10px 20px;
+  }
+  button {
+    @include box-decoration();
+    background-color: v.$primary--color;
+    padding: 12px 20px;
+  }
+}
+
+.oven-bottom-section {
+  margin-bottom: 20px;
+  .oven-on-off-display {
+    background-color: #af5d57;
+    @include box-decoration();
+    text-transform: uppercase;
+    padding: 10px 20px;
+  }
+}
