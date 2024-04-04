@@ -420,11 +420,6 @@ hr {
     @include box-decoration();
     padding: 10px 20px;
   }
-  button {
-    @include box-decoration();
-    background-color: v.$primary--color;
-    padding: 12px 20px;
-  }
 }
 
 .oven-bottom-section {
@@ -434,5 +429,86 @@ hr {
     @include box-decoration();
     text-transform: uppercase;
     padding: 10px 20px;
+  }
+}
+
+.oven-set-heat {
+  margin-bottom: 50px;
+  button {
+    @include box-decoration();
+    @include button-hover();
+    background-color: v.$primary--color;
+    padding: 12px 20px;
+  }
+  span {
+    font-size: 2rem;
+    @include box-decoration();
+    padding: 10px 20px;
+  }
+}
+// <----------------OVEN SECTION ENDS -------->
+// <----------------REFRIGERATOR BEGINS -------->
+
+.refrigerator-top-section {
+  span {
+    font-size: 1rem;
+    @include box-decoration();
+    background-color: #af5d57;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    width: auto;
+  }
+}
+
+.top-btns {
+  button {
+    @include box-decoration();
+    background-color: v.$primary--color;
+    padding: 20px 30px;
+    @include button-hover();
+  }
+  span {
+    @include box-decoration();
+    padding: 20px 50px;
+    font-size: 1.5rem;
+  }
+}
+
+.lower-btns {
+  button {
+    @include box-decoration();
+    @include button-hover();
+    background-color: v.$primary--color;
+    padding: 20px 30px;
+    text-transform: capitalize;
+    width: auto;
+    box-icon {
+      transform: translate(15px, 5px);
+    }
+  }
+}
+
+.freezer-top-section {
+  span {
+    font-size: 1rem;
+    @include box-decoration();
+    background-color: #af5d57;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+}
+
+.freezer-btns {
+  button {
+    @include box-decoration();
+    background-color: v.$primary--color;
+    padding: 20px 30px;
+    @include button-hover();
+    width: auto;
+  }
+  span {
+    @include box-decoration();
+    padding: 20px 50px;
+    font-size: 1.5rem;
   }
 }

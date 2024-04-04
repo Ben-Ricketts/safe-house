@@ -54,15 +54,8 @@
           <p>current temperature:</p>
         </section>
         <section class="oven-bottom-middle-section">
-			<button>
-				<box-icon name="down-arrow" type="solid" color="white"></box-icon>
-			  </button>
-         
-          </button>
           <span>120C</span>
-          <button>
-            <box-icon name="up-arrow" type="solid" color="white"></box-icon>
-          </button>
+          <box-icon name="up-arrow" type="solid" color="white"></box-icon>
         </section>
         <section class="oven-bottom-section">
           <div>
@@ -71,14 +64,18 @@
             <p>heating</p>
           </div>
           <div>
-            <p class="set-oven-temp-text">set to:</p>
+            <p><span>set </span> to:</p>
           </div>
         </section>
-		<section>
-			<button>-</button>
-            <span>180C</span>
-            <button>+</button>
-		</section>
+        <section class="oven-set-heat">
+          <button>
+            <box-icon name="minus-circle" color="white" size="35px"></box-icon>
+          </button>
+          <span>180C</span>
+          <button>
+            <box-icon name="plus-circle" color="white" size="35px"></box-icon>
+          </button>
+        </section>
       </section>
     </div>
 

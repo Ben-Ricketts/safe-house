@@ -189,19 +189,36 @@
     margin-right: 10px;
   }
   div:nth-child(1) {
+    p:nth-child(1) {
+      text-transform: capitalize;
+    }
     p:nth-of-type(2) {
       color: #af5d57;
+      text-transform: capitalize;
     }
   }
-  .oven-bottom-section {
-    p {
-      font-size: 1.5rem;
-      margin-right: 10px;
+  div:nth-child(2) {
+    transform: translateX(-80%);
+    span {
+      text-transform: capitalize;
     }
-    div:nth-child(1) {
-      p:nth-of-type(2) {
-        color: #af5d57;
-      }
-    }
+  }
+}
+// <------------------OVEN ENDS ----------->
+// <------------------REFRIGERATOR BEGINS ----------->
+.refrigerator-top-section {
+  h1 {
+    text-transform: capitalize;
+  }
+}
+
+.refrigerator-album {
+  text-transform: capitalize;
+  margin: 20px 0px;
+}
+
+.freezer-top-section {
+  h1 {
+    text-transform: capitalize;
   }
 }
