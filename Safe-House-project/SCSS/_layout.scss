@@ -300,6 +300,7 @@
 }
 
 // <------------------OVEN ENDS----------->
+// <------------------REFRIGERATOR BEGINS----------->
 
 .refrigerator-section {
   @include background-section();
@@ -356,4 +357,12 @@
   @media (max-width: 1100px) {
     gap: 10px;
   }
+}
+// <------------------REFRIGERATOR ENDS----------->
+// <------------------FRONT DOOR CAM BEGINS----------->
+
+.front-door-camera-section {
+  @include background-section();
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

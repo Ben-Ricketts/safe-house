@@ -512,3 +512,26 @@ hr {
     font-size: 1.5rem;
   }
 }
+// <----------------REFRIGERATOR ENDS-------->//
+// <----------------HALLWAYCAM BEGINS -------->
+
+.hold-to-talk-btn {
+  @include button-hover();
+  @include box-decoration();
+  margin: 20px;
+  background-color: v.$primary--color;
+  padding: 10px 50px;
+  box-icon {
+    transform: translate(10px, 5px);
+  }
+}
+
+.lock-status-symbol {
+  background-color: #57af69;
+  padding: 10px;
+  margin: 0px 10px;
+  border-radius: 10px;
+  box-icon {
+    transform: translateY(5px);
+  }
+}
