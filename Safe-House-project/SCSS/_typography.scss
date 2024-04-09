@@ -225,6 +225,16 @@
 // <------------------REFRIGERATOR ENDS ----------->
 // <------------------HALLWAYCAM BEGINS ----------->
 
+.front-door-header {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.door-cam-text {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
 .hold-to-talk-btn::first-letter {
   text-transform: capitalize;
 }
@@ -232,5 +242,11 @@
 .status {
   text-transform: capitalize;
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin: 20px;
+}
+
+.unlocked-text {
+  text-transform: capitalize;
+  margin: 20px;
+  color: #57af69;
 }

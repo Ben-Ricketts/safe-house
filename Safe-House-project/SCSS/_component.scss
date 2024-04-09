@@ -118,9 +118,12 @@ input {
 }
 
 .range-content-container {
-  width: 70%;
-
+  width: 60%;
   position: relative;
+  @media (max-width: 1100px) {
+    width: 40%;
+    margin-top: 10px;
+  }
 }
 
 .input-value {
@@ -198,7 +201,7 @@ input {
   border-radius: 10px;
   background-color: v.$primary--color;
   height: 65px;
-  border: 2px solid v.$border-color;
+  border: 1px solid v.$border-color;
   box-icon {
     padding: 0px 21px;
   }
@@ -521,6 +524,7 @@ hr {
   margin: 20px;
   background-color: v.$primary--color;
   padding: 10px 50px;
+  margin-top: 70px;
   box-icon {
     transform: translate(10px, 5px);
   }
@@ -534,4 +538,22 @@ hr {
   box-icon {
     transform: translateY(5px);
   }
+}
+
+.lock-btn {
+  background-color: v.$primary--color;
+  @include box-decoration();
+  @include button-hover();
+  padding: 20px 50px;
+  text-transform: capitalize;
+  margin: 20px;
+}
+
+.unlock-btn {
+  background-color: v.$primary--color;
+  @include box-decoration();
+  @include button-hover();
+  padding: 20px 40px;
+  text-transform: capitalize;
+  margin: 20px;
 }

@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="./assets/CSS/main.min.css" />
     <meta name="description" content="" />
 
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="" />
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
     <meta property="og:image:alt" content="" />
 
+    <!-- Favicon and Touch Icon -->
     <link rel="icon" href="/bxs-home-smile.svg" sizes="any" />
     <link rel="icon" href="/bxs-home-smile.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="icon.png" />
 
+    <!-- Web App Manifest -->
     <link rel="manifest" href="site.webmanifest" />
 
+    <!-- Theme Color -->
     <meta name="theme-color" content="#fafafa" />
   </head>
 
@@ -30,48 +34,39 @@
       <header class="top-banner">
         <img
           class="livingrm-banner"
-          src="/overhead-images/livingrm-svg.svg"
+          src="/overhead-images/bedroom-svg.svg"
           alt="image of living room"
         />
       </header>
-
-      <section class="camera-section">
-        <div class="camera-top-section">
-          <div class="heading-text">
-            <h1>television</h1>
+      <section class="blinds-section">
+        <div class="blinds-first-line">
+          <h1>blinds</h1>
+          <button>open</button>
+          <button>close</button>
+        </div>
+        <div class="blinds-second-line">
+          <h1>windows</h1>
+          <button class="lock">
+            <box-icon
+              name="lock-alt"
+              type="solid"
+              size="35px"
+              color="white"
+            ></box-icon>
+          </button>
+          <div class="blinds-timer">
+            <div class="timer-btn">
+              <button class="set-timer">
+                <box-icon type="solid" name="timer" color="white"></box-icon>
+                <span> 06:00-23:00 </span>
+              </button>
+            </div>
           </div>
         </div>
-
-        <div class="television-interface-section">
-          <div class="television-player">
-            <iframe
-              src="https://www.youtube.com/embed/wzKf1XCr484?si=oU7XLldbyP0czP76&autoplay=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <div class="cam-selection">
-              <a href="https://freeviewnz.tv/tvguide/whats-on/" target="_blank">
-                <button>open tv guide</button>
-              </a>
-            </div>
-          </div>
-
-          <div class="television-info">
-            <div>
-              <p>currently playing:</p>
-              <p>newshub</p>
-              <p>18:00-19:00</p>
-            </div>
-
-            <button class="remote-control">access remote</button>
-            <div>
-              <img src="./netflix.png" alt="netflix box-icon" />
-              <img src="./hulu.png" alt="hulu box-icon" />
-            </div>
-          </div>
+        <div class="windows-locked-status">
+          <p>locked</p>
+          <button>lock</button>
+          <button>unlock</button>
         </div>
       </section>
     </div>

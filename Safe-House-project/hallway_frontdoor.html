@@ -38,12 +38,13 @@
       </header>
 
       <section class="front-door-camera-section">
-        <section class="border">
-          <h1>front door</h1>
+        <section>
+          <h1 class="front-door-header">front door</h1>
+
           <img src="./frontdoor-cam.svg" alt="image of man at the front door" />
-          <p>door cam</p>
+          <p class="door-cam-text">(door cam)</p>
         </section>
-        <section class="border">
+        <section>
           <button class="hold-to-talk-btn">
             hold to talk<box-icon
               type="solid"
@@ -60,9 +61,9 @@
               color="white"
             ></box-icon>
           </span>
-          <p>unlocked</p>
-          <button>lock</button>
-          <button>unlock</button>
+          <p class="unlocked-text">unlocked</p>
+          <button class="lock-btn">lock</button>
+          <button class="unlock-btn">unlock</button>
         </section>
       </section>
     </div>
@@ -70,43 +71,41 @@
     <div class="menu-container">
       <nav class="menu">
         <div>
-          <a href="/select-page.html">
+          <button class="house-icon">
+            <a href="/select-page.html">
+              <box-icon
+                type="solid"
+                name="home-alt-2"
+                size="30px"
+                color="white"
+              ></box-icon>
+            </a>
+          </button>
+        </div>
+        <div>
+          <button class="thermo-icon" id="thermo-icon">
             <box-icon
-              class="house-icon"
+              name="thermometer"
               type="solid"
-              name="home-alt-2"
               size="30px"
               color="white"
             ></box-icon>
-          </a>
-        </div>
-        <div>
-          <box-icon
-            class="thermo-icon"
-            name="thermometer"
-            type="solid"
-            size="30px"
-            color="white"
-          ></box-icon>
-          <box-icon
-            class="wifi-icon"
-            name="wifi"
-            size="30px"
-            color="white"
-          ></box-icon>
-          <box-icon
-            class="bulb-icon"
-            name="bulb"
-            type="solid"
-            size="30px"
-            color="white"
-          ></box-icon>
+          </button>
+          <button class="wifi-icon" id="wifi-icon">
+            <box-icon name="wifi" size="30px" color="white"></box-icon>
+          </button>
+          <button class="bulb-icon" id="bulb-icon">
+            <box-icon
+              name="bulb"
+              type="solid"
+              size="30px"
+              color="white"
+            ></box-icon>
+          </button>
         </div>
       </nav>
     </div>
-
-    <!-- JavaScript Files -->
-    <script type="module" src="/js/app.js"></script>
+    <script type="module" src="/js/btn_color_change.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>

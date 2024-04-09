@@ -34,101 +34,101 @@
           alt="image of kitchen"
         />
       </header>
-      <!-- <---------------first slider ------------>
+       <!-- <---------------first slider ------------>
 
-      <section class="rangeslider-section">
-        <div class="range-slider-wrapper">
-          <div class="input-value">
-            <span id="rangeNumber">0W</span>
-            <box-icon
-              type="solid"
-              name="bulb"
-              size="35px"
-              color="white"
-            ></box-icon>
-          </div>
-          <div class="range-content-container">
-            <div class="range-thumb" id="rangeThumb"></div>
-
-            <div class="range-line">
-              <input
-                type="range"
-                class="range-input"
-                id="rangeInput"
-                min="0"
-                max="99"
-                value="0"
-                step="1"
-              />
+        <section class="rangeslider-section">
+          <div class="range-slider-wrapper">
+            <div class="input-value">
+              <span id="rangeNumber">0W</span>
+              <box-icon
+                type="solid"
+                name="bulb"
+                size="35px"
+                color="white"
+              ></box-icon>
             </div>
-          </div>
-          <div class="timer">
-            <p>set lights timer</p>
-            <div class="timer-btn">
-              <button class="set-timer">
-                <box-icon type="solid" name="timer" color="white"></box-icon>
-                <span> 06:00-23:00 </span>
-              </button>
+            <div class="range-content-container">
+              <div class="range-thumb" id="rangeThumb"></div>
+  
+              <div class="range-line">
+                <input
+                  type="range"
+                  class="range-input"
+                  id="rangeInput"
+                  min="0"
+                  max="99"
+                  value="0"
+                  step="1"
+                />
+              </div>
             </div>
-          </div>
-          <button class="power-btn">
-            <box-icon name="power-off" color="white" size="35px"></box-icon>
-          </button>
-        </div>
-      </section>
-      <!-- <----------------second slider ------------->
-
-      <section class="rangeslider-section">
-        <div class="range-slider-wrapper">
-          <div class="input-value">
-            <span id="acRangeNumber">0C</span>
-            <box-icon
-              type="solid"
-              name="thermometer"
-              color="white"
-              size="35px"
-            ></box-icon>
-          </div>
-          <div class="range-content-container">
-            <div class="range-thumb" id="acRangeThumb"></div>
-
-            <div class="ac-range-line">
-              <input
-                type="range"
-                class="range-input"
-                id="acRangeInput"
-                min="0"
-                max="40"
-                value="0"
-                step="1"
-              />
+            <div class="timer">
+              <p>set lights timer</p>
+              <div class="timer-btn">
+                <button class="set-timer">
+                  <box-icon type="solid" name="timer" color="white"></box-icon>
+                  <span> 06:00-23:00 </span>
+                </button>
+              </div>
             </div>
-            <div class="ac-temp-numbers">
-              <span>5</span>
-              <span>10</span>
-              <span>15</span>
-              <span>20</span>
-              <span>25</span>
-              <span>30</span>
-              <span>35</span>
-              <span>40</span>
-            </div>
+            <button class="power-btn" id="lights-power-btn">
+              <box-icon name="power-off" color="white" size="35px"></box-icon>
+            </button>
           </div>
-          <div class="timer">
-            <p>set lights timer</p>
-            <div class="timer-btn">
-              <button class="set-timer">
-                <box-icon type="solid" name="timer" color="white"></box-icon>
-                <span> 06:00-23:00 </span>
-              </button>
+        </section>
+        <!-- <----------------second slider ------------->
+  
+        <section class="rangeslider-section">
+          <div class="range-slider-wrapper">
+            <div class="input-value">
+              <span id="acRangeNumber">0C</span>
+              <box-icon
+                type="solid"
+                name="thermometer"
+                color="white"
+                size="35px"
+              ></box-icon>
             </div>
+            <div class="range-content-container">
+              <div class="range-thumb" id="acRangeThumb"></div>
+  
+              <div class="ac-range-line">
+                <input
+                  type="range"
+                  class="range-input"
+                  id="acRangeInput"
+                  min="0"
+                  max="40"
+                  value="0"
+                  step="1"
+                />
+              </div>
+              <div class="ac-temp-numbers">
+                <span>5</span>
+                <span>10</span>
+                <span>15</span>
+                <span>20</span>
+                <span>25</span>
+                <span>30</span>
+                <span>35</span>
+                <span>40</span>
+              </div>
+            </div>
+            <div class="timer">
+              <p>set lights timer</p>
+              <div class="timer-btn">
+                <button class="set-timer">
+                  <box-icon type="solid" name="timer" color="white"></box-icon>
+                  <span> 06:00-23:00 </span>
+                </button>
+              </div>
+            </div>
+            <button class="power-btn" id="temp-power-btn">
+              <box-icon name="power-off" color="white" size="35px"></box-icon>
+            </button>
           </div>
-          <button class="power-btn">
-            <box-icon name="power-off" color="white" size="35px"></box-icon>
-          </button>
-        </div>
-      </section>
-<!-- <---------------input range ends ---------> 
+        </section>
+  <!-- <--------------------input range ends--------------> 
       <div class="selection-btn-container">
         <div></div>
         <a href="./kitchen_cam.html">
@@ -179,37 +179,43 @@
     <div class="menu-container">
       <nav class="menu">
         <div>
+          <button class="house-icon">
           <a href="/select-page.html">
             <box-icon
-              class="house-icon"
               type="solid"
               name="home-alt-2"
               size="30px"
               color="white"
             ></box-icon>
           </a>
+        </button>
         </div>
         <div>
+          <button class="thermo-icon" id="thermo-icon">
           <box-icon
-            class="thermo-icon"
+          
             name="thermometer"
             type="solid"
             size="30px"
             color="white"
           ></box-icon>
+        </button>
+          <button class="wifi-icon"
+          id="wifi-icon">
           <box-icon
-            class="wifi-icon"
             name="wifi"
             size="30px"
             color="white"
           ></box-icon>
+        </button>
+        <button   class="bulb-icon" id="bulb-icon">
           <box-icon
-            class="bulb-icon"
             name="bulb"
             type="solid"
             size="30px"
             color="white"
           ></box-icon>
+        </button>
         </div>
       </nav>
     </div>

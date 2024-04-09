@@ -365,4 +365,7 @@
   @include background-section();
   display: grid;
   grid-template-columns: 1fr 1fr;
+  img {
+    width: 80%;
+  }
 }

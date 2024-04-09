@@ -71,7 +71,7 @@
               </button>
             </div>
           </div>
-          <button class="power-btn">
+          <button class="power-btn" id="lights-power-btn">
             <box-icon name="power-off" color="white" size="35px"></box-icon>
           </button>
         </div>
@@ -123,7 +123,7 @@
               </button>
             </div>
           </div>
-          <button class="power-btn">
+          <button class="power-btn" id="temp-power-btn">
             <box-icon name="power-off" color="white" size="35px"></box-icon>
           </button>
         </div>
@@ -180,37 +180,43 @@
     <div class="menu-container">
       <nav class="menu">
         <div>
+          <button class="house-icon">
           <a href="/select-page.html">
             <box-icon
-              class="house-icon"
               type="solid"
               name="home-alt-2"
               size="30px"
               color="white"
             ></box-icon>
           </a>
+        </button>
         </div>
         <div>
+          <button class="thermo-icon" id="thermo-icon">
           <box-icon
-            class="thermo-icon"
+          
             name="thermometer"
             type="solid"
             size="30px"
             color="white"
           ></box-icon>
+        </button>
+          <button class="wifi-icon"
+          id="wifi-icon">
           <box-icon
-            class="wifi-icon"
             name="wifi"
             size="30px"
             color="white"
           ></box-icon>
+        </button>
+        <button   class="bulb-icon" id="bulb-icon">
           <box-icon
-            class="bulb-icon"
             name="bulb"
             type="solid"
             size="30px"
             color="white"
           ></box-icon>
+        </button>
         </div>
       </nav>
     </div>

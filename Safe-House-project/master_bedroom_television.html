@@ -79,41 +79,43 @@
     <div class="menu-container">
       <nav class="menu">
         <div>
-          <a href="/select-page.html">
+          <button class="house-icon">
+            <a href="/select-page.html">
+              <box-icon
+                type="solid"
+                name="home-alt-2"
+                size="30px"
+                color="white"
+              ></box-icon>
+            </a>
+          </button>
+        </div>
+        <div>
+          <button class="thermo-icon" id="thermo-icon">
             <box-icon
-              class="house-icon"
+              name="thermometer"
               type="solid"
-              name="home-alt-2"
               size="30px"
               color="white"
             ></box-icon>
-          </a>
-        </div>
-        <div>
-          <box-icon
-            class="thermo-icon"
-            name="thermometer"
-            type="solid"
-            size="30px"
-            color="white"
-          ></box-icon>
-          <box-icon
-            class="wifi-icon"
-            name="wifi"
-            size="30px"
-            color="white"
-          ></box-icon>
-          <box-icon
-            class="bulb-icon"
-            name="bulb"
-            type="solid"
-            size="30px"
-            color="white"
-          ></box-icon>
+          </button>
+          <button class="wifi-icon" id="wifi-icon">
+            <box-icon name="wifi" size="30px" color="white"></box-icon>
+          </button>
+          <button class="bulb-icon" id="bulb-icon">
+            <box-icon
+              name="bulb"
+              type="solid"
+              size="30px"
+              color="white"
+            ></box-icon>
+          </button>
         </div>
       </nav>
     </div>
-    <script type="module" src="/js/app.js"></script>
+
+    <!-- JavaScript Files -->
+    <script type="module" src="/js/btn_color_change.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
